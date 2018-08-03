@@ -71,7 +71,7 @@ class ModelService
     {
         $columns = $this->getAllFields();
 
-        return array_keys((new $this->model())->forceFill($columns)->toSearchableArray());
+        return array_keys($columns);
     }
 
     protected function getAllFields()
